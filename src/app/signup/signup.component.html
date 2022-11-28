@@ -1,0 +1,11 @@
+<form action="/" [formGroup]="form">
+  <h1>Create Account</h1>
+  <app-input [type]="'text'" [name]="'Name'"></app-input>
+  <app-input [type]="'email'" [name]="'Email'"></app-input>
+  <div [class]="'pass-wrapper'">
+    <app-input [type]="'password'" [name]="'Password'"></app-input>
+    <app-input [type]="'password'" [name]="'Repeat password'"></app-input>
+  </div>
+  <app-button [type]="'button'" [btnValue]="'submit'"></app-button>
+  <a href="/login">Already have an account?</a>
+</form>
